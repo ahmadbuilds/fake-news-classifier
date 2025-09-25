@@ -1,0 +1,40 @@
+Project Summary & Report
+
+Project Goal:
+    Build a machine learning pipeline to classify news articles as fake or real based on text content.
+
+Data:
+    Raw dataset: 
+        Fake.csv and True.csv containing fake and real news articles.
+
+    Processed dataset: 
+        x_train.csv and y_train.csv for model training.
+
+Preprocessing & Feature Engineering:
+
+    Text preprocessing: 
+        lowercasing, stopword removal, tokenization, and stemming.
+        TF-IDF vectorization (uni-, bi-, and tri-grams).
+        Categorical features (like subject) encoded via one-hot encoding.
+
+Models & Evaluation:
+
+    Trained models: 
+        Logistic Regression, Random Forest, XGBoost.
+
+    Random Forest performance (best model):
+    Accuracy: ~99.8%
+    Confusion Matrix shows very few misclassifications.
+    Feature importance highlights key terms like "reuter", "washington", and "donald trump" as highly predictive.
+
+Key Insights:
+
+    Text content alone is highly predictive for distinguishing real vs fake news.
+    Including additional features like publication date or subject could further improve interpretability.
+
+The models can be deployed for real-time predictions with minimal preprocessing on new inputs.
+
+Figures & Visualization:
+
+    Distribution of articles by subject and time.
+    Feature importance plots help explain model decisions.
